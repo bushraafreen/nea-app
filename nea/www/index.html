@@ -37,6 +37,10 @@
 .jqm-demos .jqm-footer.ui-footer {
 	position: absolute;
 }
+.ui-content {
+	padding-left:0px;
+	padding-right:0px;
+	}
 </style>
     </head>
     <body>
@@ -46,9 +50,14 @@
     <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a> <a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a> </div>
       <!-- /header -->
       
-      <div role="main" class="ui-content jqm-content" style="padding-top:5px;text-align: center">
+      <div role="main" class="ui-content jqm-content" style="padding-top:0px;text-align: center">
     
-    <ul id="NewsList" data-role="listview">
+    <div style="width:100%;padding:0px">
+    <img id="img1" src="img/album.jpg" style="max-width:100%;" />
+</div>
+   
+    
+    <ul id="NewsList" data-role="listview" data-inset="true" style="margin:0px;">
     
     <li><a href="#">
 						<img src="img/album-hc.jpg">
@@ -75,8 +84,8 @@
           <li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
         <h3>News</h3>
         <ul>
-              <li data-filtertext="sunday bayanaat"><a href="bayanList.html?type=sunday&name=Sunday Bayan" data-ajax="false">Today</a></li>
-              <li data-filtertext="friday bayanaat"><a href="bayanList.html?type=bayans&name=Friday Bayanaat" data-ajax="false">World</a></li>
+              <li data-filtertext="today"><a href="#" data-ajax="false">Today</a></li>
+              <li data-filtertext="world"><a href="#" data-ajax="false">World</a></li>
             </ul>
       </li>
           <li data-filtertext="About Us"><a href="contact.html" data-ajax="false">Contact Us</a></li>
@@ -99,8 +108,8 @@
         <li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
               <h3>News</h3>
               <ul>
-            <li data-filtertext="sunday bayanaat"><a href="bayanList.html?type=sunday&name=Sunday Bayan" data-ajax="false">Today</a></li>
-            <li data-filtertext="friday bayanaat"><a href="bayanList.html?type=bayans&name=Friday Bayanaat" data-ajax="false">World</a></li>
+            <li data-filtertext="today"><a href="#" data-ajax="false">Today</a></li>
+            <li data-filtertext="world"><a href="#" data-ajax="false">World</a></li>
           </ul>
             </li>
         <li data-filtertext="Contact Us"><a href="contact.html" data-ajax="false">Contact Us</a></li>
